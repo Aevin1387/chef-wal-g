@@ -11,7 +11,7 @@ end
 
 # Install from archive
 archive_url = "#{node[:wal_g][:archive_url]}/#{node[:wal_g][:version]}/#{node[:wal_g][:archive_name]}"
-ark node[:wal_g][:install_path] do
+ark 'wal-g' do
   url archive_url
 end
 
