@@ -10,7 +10,7 @@ unless node[:wal_g][:packages].nil?
 end
 
 # Install from archive
-archive_url = "#{node[:wal_g][:archive_url]}/#{node[:wal_g][:version]}/#{node[:wal_g][:archive_name]}"
+archive_url = "#{node[:wal_g][:archive_url]}/v#{node[:wal_g][:version]}/#{node[:wal_g][:archive_name]}"
 ark 'wal-g' do
   url archive_url
 end
