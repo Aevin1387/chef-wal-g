@@ -13,6 +13,7 @@ end
 archive_url = "#{node[:wal_g][:archive_url]}/v#{node[:wal_g][:version]}/#{node[:wal_g][:archive_name]}"
 ark 'wal-g' do
   url archive_url
+  has_binaries ['wal-g']
 end
 
 directory node[:wal_g][:env_dir] do
